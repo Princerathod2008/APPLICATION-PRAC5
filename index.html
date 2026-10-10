@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduSphere | Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="topbar">
+        <div class="logo">Edu<span>Sphere</span></div>
+        <p>YOUR FUTURE, YOUR JOURNEY.</p>
+    </header>
+
+    <main class="registration-wrapper">
+
+        <section class="welcome-panel">
+            <div class="circle circle-one"></div>
+            <div class="circle circle-two"></div>
+
+            <span class="welcome-tag">WELCOME ABOARD</span>
+            <h1>Dream big.<br>Learn more.<br><span>Become more.</span></h1>
+
+            <p>Every great journey begins with a single step. Create your student profile and start building your future today.</p>
+
+            <div class="feature-list">
+                <div class="feature">
+                    <span>01</span>
+                    <div>
+                        <strong>Your Profile</strong>
+                        <small>Tell us a little about yourself.</small>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span>02</span>
+                    <div>
+                        <strong>Your Course</strong>
+                        <small>Choose your academic journey.</small>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span>03</span>
+                    <div>
+                        <strong>Your Future</strong>
+                        <small>Take the first step forward.</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="side-footer">LEARN TODAY. LEAD TOMORROW.</div>
+        </section>
+
+        <section class="form-panel">
+            <div class="form-header">
+                <div>
+                    <p class="section-label">STUDENT ENROLLMENT</p>
+                    <h2>Create your account</h2>
+                    <p class="subtitle">Enter your details to get started.</p>
+                </div>
+                <div class="header-icon">✦</div>
+            </div>
+
+            <form id="registrationForm" novalidate>
+
+                <div class="field">
+                    <label for="fullName">FULL NAME</label>
+                    <input type="text" id="fullName" placeholder="Enter your full name">
+                    <small class="error" id="nameError"></small>
+                </div>
+
+                <div class="field">
+                    <label for="email">EMAIL ADDRESS</label>
+                    <input type="email" id="email" placeholder="name@example.com">
+                    <small class="error" id="emailError"></small>
+                </div>
+
+                <div class="field">
+                    <label for="mobile">MOBILE NUMBER</label>
+                    <input type="tel" id="mobile" maxlength="10" placeholder="Enter 10-digit mobile number">
+                    <small class="error" id="mobileError"></small>
+                </div>
+
+                <div class="field-row">
+                    <div class="field">
+                        <label for="course">SELECT COURSE</label>
+                        <select id="course">
+                            <option value="">Choose course</option>
+                            <option>B.Tech CSE</option>
+                            <option>BCA</option>
+                            <option>B.Sc IT</option>
+                            <option>BBA</option>
+                            <option>MCA</option>
+                        </select>
+                        <small class="error" id="courseError"></small>
+                    </div>
+
+                    <div class="field">
+                        <label for="year">ACADEMIC YEAR</label>
+                        <select id="year">
+                            <option value="">Choose year</option>
+                            <option>First Year</option>
+                            <option>Second Year</option>
+                            <option>Third Year</option>
+                            <option>Fourth Year</option>
+                        </select>
+                        <small class="error" id="yearError"></small>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="password">CREATE PASSWORD</label>
+                    <input type="password" id="password" placeholder="Create a strong password">
+                    <div class="strength-box">
+                        <div class="strength-track">
+                            <span id="strengthBar"></span>
+                        </div>
+                        <small id="strength">Password strength</small>
+                    </div>
+                    <small class="error" id="passwordError"></small>
+                </div>
+
+                <div class="field">
+                    <label for="confirmPassword">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirmPassword" placeholder="Re-enter your password">
+                    <small class="error" id="confirmPasswordError"></small>
+                </div>
+
+                <fieldset class="gender-section">
+                    <legend>GENDER</legend>
+                    <div class="gender-options">
+                        <label><input type="radio" name="gender" value="Male"> Male</label>
+                        <label><input type="radio" name="gender" value="Female"> Female</label>
+                        <label><input type="radio" name="gender" value="Other"> Other</label>
+                    </div>
+                    <small class="error" id="genderError"></small>
+                </fieldset>
+
+                <div class="terms-section">
+                    <input type="checkbox" id="terms">
+                    <label for="terms">I agree to the Terms &amp; Conditions.</label>
+                </div>
+                <small class="error" id="termsError"></small>
+
+                <div class="button-row">
+                    <button type="submit" class="register-btn">Register Now <span>↗</span></button>
+                    <button type="reset" class="clear-btn">Reset</button>
+                </div>
+
+                <p id="successMessage" class="success-message"></p>
+
+            </form>
+
+            <footer class="form-footer">
+                <span>EDUSPHERE STUDENT PORTAL</span>
+                <span>© 2026</span>
+            </footer>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
